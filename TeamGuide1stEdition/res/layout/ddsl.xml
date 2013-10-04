@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    android:padding="30dip">
+    
+    <ImageView
+    	android:layout_width="150dp"
+    	android:layout_height="150dp"
+    	android:layout_gravity="center_horizontal"
+    	android:src="@drawable/ddsl"   
+    	android:contentDescription="@string/ddsl_pic"  />
+
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ddsl_page"
+        android:layout_marginBottom="25dip"
+        android:textSize="16.5sp" />
+    
+    
+	<Button
+        android:id="@+id/clubs_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clubs_label" />
+
+    <Button
+        android:id="@+id/ddsl_table_fixtures_results_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ddsl_table_label" />
+
+    <Button
+        android:id="@+id/ddsl_referee_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/referee_label" />
+          
+</LinearLayout>

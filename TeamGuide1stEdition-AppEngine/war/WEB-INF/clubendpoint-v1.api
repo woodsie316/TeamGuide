@@ -1,0 +1,208 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://teamguideproject2013.appspot.com/_ah/api",
+  "name" : "clubendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://teamguideproject2013.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "woods.stephen",
+  "ownerName" : "woods.stephen",
+  "packagePath" : "bscproject",
+  "methods" : {
+    "clubendpoint.updateClub" : {
+      "path" : "club",
+      "httpMethod" : "PUT",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "stephen.woods.bscproject.ClubEndpoint.updateClub",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "clubendpoint.removeClub" : {
+      "path" : "club/{id}",
+      "httpMethod" : "DELETE",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "stephen.woods.bscproject.ClubEndpoint.removeClub",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "clubendpoint.listClub" : {
+      "path" : "club",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "stephen.woods.bscproject.ClubEndpoint.listClub",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "clubendpoint.insertClub" : {
+      "path" : "club",
+      "httpMethod" : "POST",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "stephen.woods.bscproject.ClubEndpoint.insertClub",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "clubendpoint.getClub" : {
+      "path" : "club/{id}",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "stephen.woods.bscproject.ClubEndpoint.getClub",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Club" : {
+        "id" : "Club",
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "clubName" : {
+            "type" : "string"
+          },
+          "clubColour" : {
+            "type" : "string"
+          },
+          "location" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number"
+          },
+          "longitude" : {
+            "type" : "number"
+          },
+          "contactName" : {
+            "type" : "string"
+          },
+          "contactNum" : {
+            "type" : "string"
+          }
+        }
+      },
+      "CollectionResponse_Club" : {
+        "id" : "CollectionResponse_Club",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Club"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "stephen.woods.bscproject.ClubEndpoint.updateClub" : {
+        "request" : {
+          "$ref" : "Club"
+        },
+        "response" : {
+          "$ref" : "Club"
+        }
+      },
+      "stephen.woods.bscproject.ClubEndpoint.removeClub" : {
+        "response" : {
+          "$ref" : "Club"
+        }
+      },
+      "stephen.woods.bscproject.ClubEndpoint.listClub" : {
+        "response" : {
+          "$ref" : "CollectionResponse_Club"
+        }
+      },
+      "stephen.woods.bscproject.ClubEndpoint.insertClub" : {
+        "request" : {
+          "$ref" : "Club"
+        },
+        "response" : {
+          "$ref" : "Club"
+        }
+      },
+      "stephen.woods.bscproject.ClubEndpoint.getClub" : {
+        "response" : {
+          "$ref" : "Club"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_page">TeamGuide</string>
+    <string name="main_page2">Select a league</string>
+    <string name="main_page3">Referee Section</string>
+    <string name="app_name">TeamGuide</string>
+	<string name="ddsl_label">DDSL</string>
+	<string name="sdfl_label">SDFL</string>
+	<string name="ndsl_label">NDSL</string>
+	<string name="referee_label">Referees</string>
+	<string name="ddsl_page">Dublin District Schoolboys League</string>
+	<string name="clubs_label">Clubs</string>
+	<string name="ddsl_table_label">Table Fixtures Results</string>
+	<string name="sdfl_page">South Dublin Football League</string>
+	<string name="sdfl_table_label">Table</string>
+	<string name="sdfl_fixtures_label">Fixtures</string>
+	<string name="sdfl_results_label">Results</string>
+	<string name="ndsl_page">North Dublin Soccer League</string>
+	<string name="ndsl_table_label">Table</string>
+	<string name="ndsl_fixtures_label">Fixtures</string>
+	<string name="ndsl_results_label">Results</string>
+	<string name="directions_label">Directions</string>
+	<string name="ssg_label">Small Sided Games</string>
+	<string name="eleven_a_side_label">11-a-Side</string>
+	<string name="saturday_label">Saturday</string>
+	<string name="sunday_label">Sunday</string>
+	<string name="ddsl_pic">DDSL logo</string>
+	<string name="sdfl_pic">SDFL logo</string>
+	<string name="ndsl_pic">NDSL logo</string>
+	<string name="goal_pic">Goal pic</string>
+	<string name="ref_login">Referees Login</string>
+	<string name="username">Username</string>
+	<string name="password">Password</string>
+	<string name="login">Login</string>
+	<string name="help">Help</string>
+	<string name="send">Verify</string>
+	<string name="ref_help">Retrieve Password</string>
+	<string name="match_report">Match Report</string>
+	<string name="send_email">Send</string>
+	<string name="user_options">User Options</string>
+	<string name="send_report">Send Match Report</string>
+	<string name="change_password">Change Password</string>
+	<string name="current_password">Current Password</string>
+	<string name="new_password">New Password</string>
+	<string name="change">Change Password</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="enter_email">Enter Email Address</string>
+		
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    android:padding="30dip">
+    
+    <ImageView
+    	android:layout_width="200dp"
+    	android:layout_height="200dp"
+    	android:layout_gravity="center_horizontal"
+    	android:src="@drawable/sdfl"   
+    	android:contentDescription="@string/sdfl_pic"  />
+
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sdfl_page"
+        android:layout_marginBottom="25dip"
+        android:textSize="19.5sp" />
+    
+    <Button
+        android:id="@+id/clubs_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clubs_label" />
+
+    <Button
+        android:id="@+id/sdfl_table_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sdfl_table_label" />
+
+    <Button
+        android:id="@+id/sdfl_fixtures_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sdfl_fixtures_label" />
+    
+    <Button
+        android:id="@+id/sdfl_results_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sdfl_results_label" />
+    
+    <Button
+        android:id="@+id/sdfl_referee_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/referee_label" />
+    
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pitch"
+    android:gravity="center"
+    android:padding="30dip">
+    
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page"
+        android:layout_marginBottom="25dip"
+        android:textSize="40sp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page2"
+        android:layout_marginBottom="25dip"
+        android:textSize="16.5sp"
+        android:textStyle="italic" />
+	<Button
+        android:id="@+id/ddsl_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/boot"
+        android:drawableRight="@drawable/boot"
+        android:text="@string/ddsl_label" />
+
+    <Button
+        android:id="@+id/sdfl_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ball"
+        android:drawableRight="@drawable/ball"
+        android:text="@string/sdfl_label" />
+
+    <Button
+        android:id="@+id/ndsl_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/jersey"
+        android:drawableRight="@drawable/jersey"
+        android:text="@string/ndsl_label" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page3"
+        android:layout_marginBottom="10dip"
+        android:textSize="16.5sp"
+        android:textStyle="italic" />
+    
+    <Button
+        android:id="@+id/referee_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/referee_label"
+        android:background="@color/ref_button"
+        android:drawableLeft="@drawable/referee"
+        android:drawableRight="@drawable/referee"
+        android:textColor="@color/button_text_colour" />
+    
+        
+    
+</LinearLayout>

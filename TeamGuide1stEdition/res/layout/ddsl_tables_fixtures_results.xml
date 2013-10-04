@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    android:padding="30dip">
+    
+    <ImageView
+    	android:layout_width="150dp"
+    	android:layout_height="150dp"
+    	android:layout_gravity="center_horizontal"
+    	android:src="@drawable/ddsl"   
+    	android:contentDescription="@string/ddsl_pic"  />
+
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ddsl_page"
+        android:layout_marginBottom="25dip"
+        android:textSize="16.5sp" />
+
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saturday_label"
+        android:layout_marginBottom="10dip"
+        android:textSize="16.5sp"
+        android:textStyle="italic" />
+    
+    
+	<Button
+        android:id="@+id/sat_ssg_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ssg_label" />
+
+    <Button
+        android:id="@+id/sat_11aside_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eleven_a_side_label" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunday_label"
+        android:layout_marginBottom="10dip"
+        android:textSize="16.5sp"
+        android:textStyle="italic" />
+        
+    <Button
+        android:id="@+id/sun_ssg_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ssg_label" />
+
+    <Button
+        android:id="@+id/sun_11aside_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eleven_a_side_label" />
+          
+</LinearLayout>

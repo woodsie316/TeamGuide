@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView android:id="@+id/club_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ball"
+        	android:drawableRight="@drawable/ball"
+            android:textColor="#78AB46"/>
+  
+  <TextView android:id="@+id/club_colour_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dip"/>
+  
+  <TextView android:id="@+id/club_contact_name_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dip"/>
+  
+  <TextView android:id="@+id/club_contact_number_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dip"/>
+  
+  <TextView android:id="@+id/club_location_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dip"/>
+  
+  <Button
+        android:id="@+id/directions_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/directions_label" />
+  
+</LinearLayout>
